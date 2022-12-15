@@ -3,80 +3,79 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" href="./main_files/styles.css">
 </head>
-
 <body>
-	<!--button-->
-<div data-="" ns-="" attribute="block- inline- button">
-	<button>Test1</button>
+	<!-- button -->
+	<div data-ns-test="block-inline-button">
+		<button>Test1</button>
 		<button>Test2</button>
 		Answer: Inline
-</div>
-<!--div-->
-<div data-="" ns-="" attribute="block-inline-div">
-	<div>Test1</div>
+	</div>
+	<!-- div  -->
+	<div data-ns-test="block-inline-div">
+		<div>Test1</div>
 		<div>Test2</div>
 		Answer: Block
-</div>
-<!--span-->
-<div data-="" ns-="" attribute="block-inline-span">
-	<span>Test1</span>
+	</div>
+	<!-- span -->
+	<div data-ns-test="block-inline-span">
+		<span>Test1</span>
 		<span>Test2</span>
 		Answer: Inline
-</div>
-<!--p-->
-<div data-="" ns-="" attribute="block-inline-p">
-	<p>Test1</p>
+	</div>
+	<!-- p 
+	<div data-ns-test="block-inline-p">
+		<p>Test1</p>
 		<p>Test2</p>
 		Answer: Block
-</div>
-<!--input-->
-<div data-="" ns-="" attribute="block-inline-input">
-	<input>Test1
+	</div> -->
+	<!-- input  -->
+	<div data-ns-test="block-inline-input">
+		<input>Test1
 		<input>Test2
 		Answer: Inline 
-</div>
-<!--cite-->
-<div data-="" ns-="" attribute="block-inline-cite">
-	<cite>Test1</cite>
+	</div>
+	<!-- cite  -->
+	<div data-ns-test="block-inline-cite">
+		<cite>Test1</cite>
 		<cite>Test2</cite>
 		Answer: Inline
-</div>
-code
-<!--code-->
-<div data-="" ns-="" attribute="block-inline-code">
-<code>Test1</code>
+	</div>
+	
+	 code
+	<div data-ns-test="block-inline-code">
+		<code>Test1</code>
 		<code>Test2</code>
 		Answer: Inline
-</div>
-<!--p-->
-<div data-="" ns-="" attribute="block-inline-p">
-	<p>Test1</p>
+	</div> 
+	
+	<!-- p  -->
+	<div data-ns-test="block-inline-p">
+		<p>Test1</p>
 		<p>Test2</p>
 		Answer: Block
-</div>
-<!--h1-->
-<div data-="" ns-="" attribute="block-inline-h1">
-	<h1>Test1</h1>
+	</div>
+	<!-- h1 -->
+	<div data-ns-test="block-inline-h1">
+		<h1>Test1</h1>
 		<h1>Test2</h1>
 		Answer: Block
-</div>
-<!--sup-->
-<div data-="" ns-="" attribute=" block-inline-sup">
-	<sup>Test1</sup>
+	</div>
+	<!-- sup  -->
+	<div data-ns-test="block-inline-sup">
+		<sup>Test1</sup>
 		<sup>Test2</sup>
 		Answer: Inline
-</div>
-<!--sub-->
-<div data-="" ns-="" attribute="block-inline-sub">
-	<sub>Test1</sub>
+	</div>
+	<!-- sub  -->
+	<div data-ns-test="block-inline-sub">
+		<sub>Test1</sub>
 		<sub>Test2</sub>
 		Answer: Inline
-</div>
-
+	</div>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./main_files/script.js.download">
-</script>
-
+	<script type="text/javascript" src="./main_files/script.js.download">
+	</script>
+ 
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
@@ -116,45 +115,6 @@ code
 	// ]]>
 </script>
 
-
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
